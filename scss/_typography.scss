@@ -1,0 +1,235 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+// Declare constants
+:root {
+    // Typography
+    --sans: 'Poppins', sans-serif;
+
+    // Modular values calculated using
+    // https://type-scale.com/ 
+    // Scale : 1.250 - Major Third
+    // Base : 16px - 1rem
+    --size-09: 7.451rem; // 119.21px
+    --size-08: 5.96rem; // 95.37px
+    --size-07: 4.768rem; // 76.29px
+    --size-06: 3.815rem; // 61.04px
+    --size-05: 3.052rem; // 48.83px
+    --size-04: 2.441rem; // 39.06px
+    --size-03: 1.953rem; // 31.25px
+    --size-02: 1.563rem; // 25.00px
+    --size-01: 1.25rem; // 20.00px
+    --size-00: 1rem; // 16.00px
+    --size--01: 0.8rem; // 12.80px
+    --size--02: 0.64rem; // 10.24px
+    --size--03: 0.512rem; // 8.19px
+
+    // Line Height
+    // Constant value that will be added above and below x-height
+    --mod-line-height: 0.1ex;
+
+    // Line Length
+    // Short Lines 20 - 40ch
+    --line-length-short: 30ch;
+    // Body Copy 40 - 60ch
+    --line-length-copy: 50ch;
+}
+
+body {
+    // Global typography defaults
+    font-family: var(--sans);
+    font-size: var(--size--01);
+    line-height: calc(1em + 1.1ex);
+    letter-spacing: 0.03ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    max-inline-size: var(--line-length-short);
+}
+
+p,
+span,
+address,
+blockquote {
+    max-inline-size: var(--line-length-copy);
+}
+
+.display-01,
+.display-02,
+.display-03,
+.display-04 {
+    display: block;
+}
+
+// Type sizing
+.display-01 {
+    font-size: var(--size-09);
+    line-height: calc(1em + 0.1ex);
+    letter-spacing: -0.05ch;
+    margin-block-end: 0.75em;
+}
+
+.display-02 {
+    font-size: var(--size-08);
+    line-height: calc(1em + 0.2ex);
+    letter-spacing: -0.04ch;
+    margin-block-end: 0.80em;
+}
+
+.display-03 {
+    font-size: var(--size-07);
+    line-height: calc(1em + 0.3ex);
+    letter-spacing: -0.03ch;
+    margin-block-end: 0.85em;
+}
+
+.display-04 {
+    font-size: var(--size-06);
+    line-height: calc(1em + 0.4ex);
+    letter-spacing: -0.02ch;
+    margin-block-end: 0.90em;
+}
+
+h1,
+.h1 {
+    font-size: var(--size-05);
+    line-height: calc(1em + 0.5ex);
+    letter-spacing: -0.03ch;
+    margin-block-end: 0.95em;
+}
+
+h2,
+.h2 {
+    font-size: var(--size-04);
+    line-height: calc(1em + 0.6ex);
+    letter-spacing: -0.02ch;
+    margin-block-end: 1em;
+}
+
+h3,
+.h3 {
+    font-size: var(--size-03);
+    line-height: calc(1em + 0.7ex);
+    letter-spacing: -0.01ch;
+    margin-block-end: 1.05em;
+}
+
+h4,
+.h4 {
+    font-size: var(--size-02);
+    line-height: calc(1em + 0.8ex);
+    letter-spacing: 0;
+    margin-block-end: 1.1em;
+}
+
+.h5,
+.subhead-01 {
+    font-size: var(--size-01);
+    line-height: calc(1em + 0.9ex);
+    letter-spacing: 0.01ch;
+    margin-block-end: 1.15em;
+}
+
+.h6,
+.body-01,
+.subhead-02 {
+    font-size: var(--size-00);
+    line-height: calc(1em + 1ex);
+    letter-spacing: 0.02ch;
+    margin-block-end: 1.2em;
+}
+
+p,
+.overline,
+.body-02 {
+    font-size: var(--size--01);
+    line-height: calc(1em + 1.1ex);
+    letter-spacing: 0.03ch;
+    margin-block-end: 1.25em;
+}
+
+.caption {
+    font-size: var(--size--02);
+    line-height: calc(1em + 1.2ex);
+    letter-spacing: 0.04ch;
+    margin-block-end: 1.3em;
+}
+
+.tiny {
+    font-size: var(--size--03);
+    line-height: calc(1em + 1.3ex);
+    letter-spacing: 0.05ch;
+    margin-block-end: 1.35em;
+}
+
+// Type weight
+.display-01,
+.display-02,
+.display-03,
+.display-04 {
+    font-weight: 900;
+
+    strong {
+        font-weight: 900;
+    }
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+    font-weight: 700;
+
+    strong {
+        font-weight: 900;
+    }
+}
+
+h3,
+.h3,
+h4,
+.h4,
+.overline {
+    font-weight: 500;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.h5,
+.subhead-01,
+.h6,
+.subhead-02,
+.caption,
+.tiny {
+    font-weight: 400;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+p,
+.body-01,
+.body-02 {
+    font-weight: 300;
+
+    strong {
+        font-weight: 500;
+    }
+}
+
+// if there's only one element inside a parent
+// consider removing the parent ...
+// but if it must be there
+// let's remove the margin-block-end from the child
+// so it's not added to the parent's padding
+*>*:only-child {
+    margin-block-end: 0;
+}

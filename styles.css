@@ -1,1 +1,321 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
+:root {
+  --sans: 'Poppins', sans-serif;
+  --size-09: 7.451rem;
+  --size-08: 5.96rem;
+  --size-07: 4.768rem;
+  --size-06: 3.815rem;
+  --size-05: 3.052rem;
+  --size-04: 2.441rem;
+  --size-03: 1.953rem;
+  --size-02: 1.563rem;
+  --size-01: 1.25rem;
+  --size-00: 1rem;
+  --size--01: 0.8rem;
+  --size--02: 0.64rem;
+  --size--03: 0.512rem;
+  --mod-line-height: 0.1ex;
+  --line-length-short: 30ch;
+  --line-length-copy: 50ch;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: var(--size--01);
+  line-height: calc(1em + 1.1ex);
+  letter-spacing: 0.03ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-inline-size: var(--line-length-short);
+}
+
+p,
+span,
+address,
+blockquote {
+  max-inline-size: var(--line-length-copy);
+}
+
+.display-01,
+.display-02,
+.display-03,
+.display-04 {
+  display: block;
+}
+
+.display-01 {
+  font-size: var(--size-09);
+  line-height: calc(1em + 0.1ex);
+  letter-spacing: -0.05ch;
+  -webkit-margin-after: 0.75em;
+          margin-block-end: 0.75em;
+}
+
+.display-02 {
+  font-size: var(--size-08);
+  line-height: calc(1em + 0.2ex);
+  letter-spacing: -0.04ch;
+  -webkit-margin-after: 0.80em;
+          margin-block-end: 0.80em;
+}
+
+.display-03 {
+  font-size: var(--size-07);
+  line-height: calc(1em + 0.3ex);
+  letter-spacing: -0.03ch;
+  -webkit-margin-after: 0.85em;
+          margin-block-end: 0.85em;
+}
+
+.display-04 {
+  font-size: var(--size-06);
+  line-height: calc(1em + 0.4ex);
+  letter-spacing: -0.02ch;
+  -webkit-margin-after: 0.90em;
+          margin-block-end: 0.90em;
+}
+
+h1,
+.h1 {
+  font-size: var(--size-05);
+  line-height: calc(1em + 0.5ex);
+  letter-spacing: -0.03ch;
+  -webkit-margin-after: 0.95em;
+          margin-block-end: 0.95em;
+}
+
+h2,
+.h2 {
+  font-size: var(--size-04);
+  line-height: calc(1em + 0.6ex);
+  letter-spacing: -0.02ch;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+}
+
+h3,
+.h3 {
+  font-size: var(--size-03);
+  line-height: calc(1em + 0.7ex);
+  letter-spacing: -0.01ch;
+  -webkit-margin-after: 1.05em;
+          margin-block-end: 1.05em;
+}
+
+h4,
+.h4 {
+  font-size: var(--size-02);
+  line-height: calc(1em + 0.8ex);
+  letter-spacing: 0;
+  -webkit-margin-after: 1.1em;
+          margin-block-end: 1.1em;
+}
+
+.h5,
+.subhead-01 {
+  font-size: var(--size-01);
+  line-height: calc(1em + 0.9ex);
+  letter-spacing: 0.01ch;
+  -webkit-margin-after: 1.15em;
+          margin-block-end: 1.15em;
+}
+
+.h6,
+.body-01,
+.subhead-02 {
+  font-size: var(--size-00);
+  line-height: calc(1em + 1ex);
+  letter-spacing: 0.02ch;
+  -webkit-margin-after: 1.2em;
+          margin-block-end: 1.2em;
+}
+
+p,
+.overline,
+.body-02 {
+  font-size: var(--size--01);
+  line-height: calc(1em + 1.1ex);
+  letter-spacing: 0.03ch;
+  -webkit-margin-after: 1.25em;
+          margin-block-end: 1.25em;
+}
+
+.caption {
+  font-size: var(--size--02);
+  line-height: calc(1em + 1.2ex);
+  letter-spacing: 0.04ch;
+  -webkit-margin-after: 1.3em;
+          margin-block-end: 1.3em;
+}
+
+.tiny {
+  font-size: var(--size--03);
+  line-height: calc(1em + 1.3ex);
+  letter-spacing: 0.05ch;
+  -webkit-margin-after: 1.35em;
+          margin-block-end: 1.35em;
+}
+
+.display-01,
+.display-02,
+.display-03,
+.display-04 {
+  font-weight: 900;
+}
+
+.display-01 strong,
+.display-02 strong,
+.display-03 strong,
+.display-04 strong {
+  font-weight: 900;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: 700;
+}
+
+h1 strong,
+.h1 strong,
+h2 strong,
+.h2 strong {
+  font-weight: 900;
+}
+
+h3,
+.h3,
+h4,
+.h4,
+.overline {
+  font-weight: 500;
+}
+
+h3 strong,
+.h3 strong,
+h4 strong,
+.h4 strong,
+.overline strong {
+  font-weight: 700;
+}
+
+.h5,
+.subhead-01,
+.h6,
+.subhead-02,
+.caption,
+.tiny {
+  font-weight: 400;
+}
+
+.h5 strong,
+.subhead-01 strong,
+.h6 strong,
+.subhead-02 strong,
+.caption strong,
+.tiny strong {
+  font-weight: 700;
+}
+
+p,
+.body-01,
+.body-02 {
+  font-weight: 300;
+}
+
+p strong,
+.body-01 strong,
+.body-02 strong {
+  font-weight: 500;
+}
+
+* > *:only-child {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+:root {
+  --core-purple-03: #460073;
+  --core-purple-02: #7500C0;
+  --core-purple-01: #A100FF;
+  --accent-purple-05: #B455AA;
+  --accent-purple-04: #A055F5;
+  --accent-purple-03: #BE82FF;
+  --accent-purple-02: #DCAFFF;
+  --accent-purple-01: #E6DCFF;
+  --neutral-04: #000;
+  --neutral-03: #96968C;
+  --neutral-02: #E6E6DC;
+  --neutral-01: #fff;
+  --blue-06: #0041F0;
+  --blue-05: #4C7AF4;
+  --blue-04: #668DF6;
+  --blue-03: #80A0F7;
+  --blue-02: #99B3F9;
+  --blue-01: #B2C6FA;
+  --red-06: #FF3246;
+  --red-05: #FF6F7D;
+  --red-04: #FF8490;
+  --red-03: #FF98A2;
+  --red-02: #FFADB5;
+  --red-01: #FFC1C7;
+  --aqua-06: #0FF;
+  --aqua-05: #80FFFF;
+  --aqua-04: #9FF;
+  --aqua-03: #B2FFFF;
+  --aqua-02: #CFF;
+  --aqua-01: #E5FFFF;
+  --pink-06: #FF50A0;
+  --pink-05: #FF84BC;
+  --pink-04: #FF96C6;
+  --pink-03: #FFA7CF;
+  --pink-02: #FFB9D9;
+  --pink-01: #FFCAE2;
+  --green-06: #64FF50;
+  --green-05: #92FF84;
+  --green-04: #A2FF96;
+  --green-03: #B1FFA7;
+  --green-02: #C1FFB9;
+  --green-01: #D0FFCA;
+  --orange-06: #FF7800;
+  --orange-05: #FFA04C;
+  --orange-04: #FFAE66;
+  --orange-03: #FFBB80;
+  --orange-02: #FFC999;
+  --orange-01: #FFD6B2;
+  --teal-06: #05F0A5;
+  --teal-05: #82F7D2;
+  --teal-04: #9BF9DB;
+  --teal-03: #B4FAE4;
+  --teal-02: #CDFCED;
+  --teal-01: #E6FDF6;
+  --yellow-06: #FFEB32;
+  --yellow-05: #FFF384;
+  --yellow-04: #FFF6A3;
+  --yellow-03: #FFF9C1;
+  --yellow-02: #FFFBD6;
+  --yellow-01: #FFFDEA;
+}
+
+body {
+  color: var(--neutral-04);
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  min-block-size: 100%;
+  -ms-grid-columns: 90vw;
+      grid-template-columns: 90vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
