@@ -1,4 +1,7 @@
-// Import fonts
+// Fonts    : 59.5kb
+// Sans     : Poppins           : 300, 400, 500, 700
+// Serif    : Playfair Display  : 400, 700
+// Mono     : Fira Code         : 400
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 
 // Declare constants
@@ -7,7 +10,6 @@
     --sans: 'Poppins', sans-serif;
     --serif: 'Playfair Display', serif;
     --mono: 'Fira Code', monospace;
-
 
     // Modular values calculated using
     // https://type-scale.com/ 
@@ -26,10 +28,6 @@
     --size--01: 0.8rem; // 12.80px
     --size--02: 0.64rem; // 10.24px
     --size--03: 0.512rem; // 8.19px
-
-    // Line Height
-    // Constant value that will be added above and below x-height
-    --mod-line-height: 0.1ex;
 
     // Line Length
     // Short Lines 20 - 40ch
