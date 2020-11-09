@@ -1,0 +1,23 @@
+:root {
+    /* Spacing */
+    // Using 4px grid * Fibonacci Sequence
+    --unit: 0.5rem; // 8px @ 16px base font-size
+
+    // abstract scale from base so either can be adjusted
+    --space-xs: calc(var(--unit) / 2); // 4px ...
+    --space-sm: var(--unit); // 8px ...
+    --space-md: calc(var(--unit) * 2); // 16px ...
+    --space-lg: calc(var(--unit) * 3); // 24px ...
+    --space-xl: calc(var(--unit) * 5); // 40px ...
+    --space-xxl: calc(var(--unit) * 8); // 64px ...
+
+    /* Border Radius */
+    --border-radius-sm: 0.125rem; // 2px @ 16px base font-size
+    --border-radius-md: 0.25rem; // 4px @ 16px base font-size
+    --border-radius-lg: 0.5rem; // 8px @ 16px base font-size
+    --border-radius-xl: 1.5rem; // 24px @ 16px base font-size
+    // border-radius 50% on a rectangle produces an ellipse rather than rounded corners
+    // 8em should be large enough to make most elements round
+    // ... feel free to raise the number if needed
+    --border-radius-round: 8rem; // "pill" shaped
+}

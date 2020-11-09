@@ -8,6 +8,88 @@
 </head>
 
 <body class="typography-demo">
+
+  <main>
+
+    <h1>Colors</h1>
+    <section class="color-grids">
+      <section class="palette" color="blue">
+        <nav>
+          <h1 class="h5">Blue</h1>
+          <samp><span>Blue 01</span></samp>
+          <samp><span>Blue 02</span></samp>
+          <samp><span>Blue 03</span></samp>
+          <samp><span>Blue 04</span></samp>
+          <samp><span>Blue 05</span></samp>
+          <samp><span>Blue 06</span></samp>
+          <samp><span>Blue 07</span></samp>
+          <samp><span>Blue 08</span></samp>
+          <samp><span>Blue 09</span></samp>
+          <samp><span>Blue 10</span></samp>
+          <samp><span>Blue 11</span></samp>
+        </nav>
+        <figure class="step" num="6" text="light">
+          <figcaption class="h2">06</figcaption>
+          <dl>
+            <dt>HSL</dt>
+            <dd>224 / 100 / 47</dd>
+            <dt>RGB</dt>
+            <dd>0 / 65 / 240</dd>
+            <dt>Hex</dt>
+            <dd>0041F0</dd>
+            <dt>CMYK</dt>
+            <dd>94 / 69 / 0 / 6</dd>
+            <dt>HSB</dt>
+            <dd>224 / 100 / 94</dd>
+            <dt style="color: var(--neutral-04);">
+              <svg class="icon" aria-label="WCAG compliant with #000 text" style="color: var(--neutral-04);">
+                <use xlink:href="#check-circle" /></svg></dt>
+            <dd>3.01: 1<span class="compliance-level">AA</span></dd>
+            <dt><svg class="icon" aria-label="WCAG compliant with #FFF text" style="color: var(--neutral-01);">
+                <use xlink:href="#check-circle" /></svg></dt>
+            <dd>6.96: 1<span class="compliance-level">AAA</span></dd>
+          </dl>
+        </figure>
+      </section>
+    </section>
+  </main>
+
+  <main>
+    <h1>Buttons</h1>
+    <section>
+      <button>
+        Text Only
+      </button>
+      <button>
+        <svg class="icon" aria-label="leading icon button">
+          <use xlink:href="#check-circle" /></svg>
+        Leading Icon
+      </button>
+      <button>
+        Trailing Icon
+        <svg class="icon" aria-label="trailing icon button">
+          <use xlink:href="#check-circle" /></svg>
+      </button>
+      <button class="fab">
+        <svg class="icon" aria-label="icon button">
+          <use xlink:href="#check-circle" /></svg>
+      </button>
+      <button>
+        <svg class="icon" aria-label="lots of icons in a button">
+          <use xlink:href="#check-circle" /></svg>
+        <svg class="icon" aria-label="lots of icons in a button">
+          <use xlink:href="#check-circle" /></svg>
+        woah
+        <svg class="icon" aria-label="lots of icons in a button">
+          <use xlink:href="#check-circle" /></svg>
+        <svg class="icon" aria-label="lots of icons in a button">
+          <use xlink:href="#check-circle" /></svg>
+        <svg class="icon" aria-label="lots of icons in a button">
+          <use xlink:href="#check-circle" /></svg>
+      </button>
+    </section>
+  </main>
+
   <main>
     <h1>Typographic Scale</h1>
     <section>
@@ -77,6 +159,29 @@
       <span class="overline" name="overline">The quick brown fox jumps over the lazy dog.</span>
     </section>
   </main>
+
+  <!-- SVG Icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="check-circle" viewBox="0 0 24 24">
+      <path
+        d="M23.625 12C23.625 18.4203 18.4203 23.625 12 23.625C5.57967 23.625 0.375 18.4203 0.375 12C0.375 5.57967 5.57967 0.375 12 0.375C18.4203 0.375 23.625 5.57967 23.625 12ZM10.6553 18.1553L19.2803 9.53034C19.5732 9.23747 19.5732 8.76258 19.2803 8.4697L18.2197 7.40906C17.9268 7.11614 17.4519 7.11614 17.159 7.40906L10.125 14.443L6.84098 11.159C6.54811 10.8661 6.07322 10.8661 5.7803 11.159L4.71966 12.2197C4.42678 12.5125 4.42678 12.9874 4.71966 13.2803L9.59466 18.1553C9.88758 18.4482 10.3624 18.4482 10.6553 18.1553V18.1553Z"
+        fill="currentColor" />
+    </symbol>
+    <symbol id="copy" viewBox="0 0 24 24">
+      <path
+        d="M21.841 3.09098L19.409 0.659016C18.9871 0.237058 18.4148 3.12036e-06 17.818 0L9.75 0C8.50734 0 7.5 1.00734 7.5 2.25V4.5H3.75C2.50734 4.5 1.5 5.50734 1.5 6.75V21.75C1.5 22.9927 2.50734 24 3.75 24H14.25C15.4927 24 16.5 22.9927 16.5 21.75V19.5H20.25C21.4927 19.5 22.5 18.4927 22.5 17.25V4.68197C22.5 4.08523 22.2629 3.51294 21.841 3.09098ZM18 1.52302C18.1319 1.55555 18.2523 1.62356 18.3483 1.71966L20.7803 4.15167C20.8764 4.24767 20.9444 4.36813 20.9769 4.5H18V1.52302ZM15 21.75C15 22.1635 14.6635 22.5 14.25 22.5H3.75C3.33647 22.5 3 22.1635 3 21.75V6.75C3 6.33647 3.33647 6 3.75 6H7.5V17.25C7.5 18.4927 8.50734 19.5 9.75 19.5H15V21.75ZM21 17.25C21 17.6635 20.6635 18 20.25 18H9.75C9.33647 18 9 17.6635 9 17.25V2.25C9 1.83647 9.33647 1.5 9.75 1.5H16.5V4.875C16.5 5.49375 17.0063 6 17.625 6H21V17.25Z"
+        fill="currentColor" />
+    </symbol>
+    <symbol id="times-circle" viewBox="0 0 24 24">
+      <path
+        d="M12 0C5.37097 0 0 5.37097 0 12C0 18.629 5.37097 24 12 24C18.629 24 24 18.629 24 12C24 5.37097 18.629 0 12 0ZM17.8839 15.15C18.1113 15.3774 18.1113 15.7452 17.8839 15.9726L15.9677 17.8839C15.7403 18.1113 15.3726 18.1113 15.1452 17.8839L12 14.7097L8.85 17.8839C8.62258 18.1113 8.25484 18.1113 8.02742 17.8839L6.11613 15.9677C5.88871 15.7403 5.88871 15.3726 6.11613 15.1452L9.29032 12L6.11613 8.85C5.88871 8.62258 5.88871 8.25484 6.11613 8.02742L8.03226 6.11129C8.25968 5.88387 8.62742 5.88387 8.85484 6.11129L12 9.29032L15.15 6.11613C15.3774 5.88871 15.7452 5.88871 15.9726 6.11613L17.8887 8.03226C18.1161 8.25968 18.1161 8.62742 17.8887 8.85484L14.7097 12L17.8839 15.15Z"
+        fill="currentColor" />
+    </symbol>
+    <symbol id="inverted-round" viewBox="0 0 24 24">
+      <path d="M24 0V24H0C13.2548 24 24 13.2548 24 0Z" fill="currentColor" />
+    </symbol>
+  </svg>
 
   <!-- Global Dependencies -->
   <script src="/js/main.js"></script>

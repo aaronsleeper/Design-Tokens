@@ -1,0 +1,27 @@
+button {
+    @extend .body-01;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: var(--size--005);
+    font-weight: 500;
+    background-color: var(--core-purple-01);
+    border-color: var(--core-purple-02);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    color: var(--neutral-01);
+    margin-block-end: 1em;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        filter: brightness(120%);
+    }
+
+    &.fab {
+        padding: var(--space-sm);
+        border-radius: var(--border-radius-round);
+    }
+}

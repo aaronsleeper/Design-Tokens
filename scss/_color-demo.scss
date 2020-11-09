@@ -1,0 +1,104 @@
+.palette {
+    background-color: #0041F0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.07), 0px 7.2353px 24.1177px rgba(0, 0, 0, 0.04557), 0px 3.00517px 10.0172px rgba(0, 0, 0, 0.0351968), 0px 1.08691px 3.62304px rgba(0, 0, 0, 0.0242312);
+    width: max-content;
+    overflow: hidden;
+
+    h1,
+    figcaption {
+        height: calc(var(--space-lg) + var(--size-04));
+        display: grid;
+        align-items: end;
+        margin-block-end: 0;
+    }
+
+    figcaption {
+        font-weight: 500;
+        line-height: 1; // added this to help align the color name
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::after {
+            content: '';
+            display: block;
+            block-size: var(--space-lg);
+            background-color: var(--neutral-01);
+            width: 100%;
+            border-radius: 0 0 0 var(--border-radius-sm);
+        }
+
+        h1 {
+            background-color: var(--neutral-01);
+            padding-inline-start: var(--space-lg);
+            padding-inline-end: var(--space-lg);
+            border-radius: var(--border-radius-sm) 0 0 0;
+            background-color: var(--neutral-01);
+        }
+
+        samp {
+            background-color: blue;
+            border-radius: var(--border-radius-lg);
+            margin: 4px 0;
+            display: flex;
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                height: 100%;
+                width: 20px;
+                background-color: white;
+            }
+        }
+    }
+
+    .step {
+        margin: 0;
+
+        &[text="light"] {
+            color: var(--neutral-01);
+        }
+
+        &[text="dark"] {
+            color: var(--neutral-04);
+        }
+    }
+
+    figcaption,
+    dl {
+        margin-inline-start: var(--space-lg);
+        margin-inline-end: var(--space-lg);
+    }
+
+    dl {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: var(--space-sm) var(--space-lg);
+        align-content: top;
+        margin-block-end: var(--space-lg);
+
+        dt {
+            font-weight: 400;
+        }
+
+        dd {
+            font-weight: 500;
+            white-space: nowrap;
+            margin-inline-start: 0;
+
+            .compliance-level {
+                font-weight: 400;
+                opacity: 0.6;
+                margin-inline-start: var(--space-sm);
+            }
+        }
+    }
+}
