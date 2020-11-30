@@ -1,8 +1,57 @@
 body {
     display: grid;
-    min-block-size: 100%;
-    grid-template-columns: 90vw;
-    justify-content: center;
+    background-color: var(--core-purple-100);
+    background-image: linear-gradient(var(--core-purple-100), var(--core-purple-300));
+    place-content: center;
+    min-block-size: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    --bubble-height: var(--space-md);
+    // keeping the proportions to the original dimensions of 72 x 16
+    --bubble-width: calc((var(--bubble-height) / 16) * 72);
+    --bubble-left: 100px;
+    display: flex;
+    position: relative;
+    block-size: calc(100vh - (var(--space-md) * 2));
+    inline-size: calc(100vw - (var(--space-md) * 2));
+    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--neutral-000) 0%, var(--neutral-000) 100%),
+        linear-gradient(90deg, var(--neutral-000) 0%, var(--neutral-000) 100%),
+        linear-gradient(90deg, var(--neutral-000) 0%, var(--neutral-000) 100%),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 16"><path d="M4.733 0H0v16h72V0h-4.733a24 24 0 00-13.313 4.03l-11.298 7.532a12 12 0 01-13.312 0L18.046 4.031A24 24 0 004.733 0z" style="fill:rgba(255, 255, 255, 1)" /></svg>');
+    background-position: left var(--bubble-height),
+        left top,
+        calc(var(--bubble-left) + var(--bubble-width)) top,
+        var(--bubble-left) top;
+    background-size: 100% 100%,
+        var(--bubble-left) var(--bubble-height),
+        100% var(--bubble-height),
+        var(--bubble-width) var(--bubble-height);
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    overflow: scroll;
+
+    nav {
+        min-inline-size: var(--space-xl);
+        background-color: var(--neutral-300);
+        text-align: center;
+        position: sticky;
+        block-size: calc(100vh - (var(--space-md) * 2));
+        top: 0;
+
+        >*:first-child {
+            display: block;
+            margin-top: var(--space-md);
+        }
+    }
+
+    main {
+        flex-grow: 1;
+    }
 }
 
 main {
